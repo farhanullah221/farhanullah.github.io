@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      /* background: #74879b; */
+      /* background: indigo; */
+      background: slategrey;
+      color: white;
+      padding:2px 0;
+      text-align: center;
+    
+    }
+
+    nav {
+      /* background: #29412e; */
+      background: lightblue;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: 900;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul.skills {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.skills li {
+      background: #e0e0e0;
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+li{
+    box-shadow: 1px 2px 3px 1px black ,inset 1px 1px 10px 1px rgb(0, 0, 0);
+    font-weight: 900;
+    font-style: italic;
+}
+    .project {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    a {
+      color: #007bff;
+    }
+    a:hover{
+        color: red;
+        transition: all 1s;
+    }
+    /* Mobile Phones (up to 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  ul.skills li {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .project {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 15px;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  nav a {
+    margin: 10px;
+  }
+
+  ul.skills li {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
+img{
+height: 200px;
+width: 200px;
+background-size: cover;
+background-position: center;
+border-radius: 50%;
+
+display: inline-block;
+
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./WhatsApp Image 2025-05-21 at 3.15.27 AM.jpeg" alt="">
+    <h1>Hi, I'm Farhan Ullah </h1>
+    <p>Frontend Web Developer & wordpress developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a self-taught frontend developer with skills in HTML, CSS, JavaScript ,Sass , tailwind css bootsrap and wordpress. I love building clean, fast, and responsive websites. I have completed several small projects like To-Do Apps and simple UIs. I'm looking for remote or onsite job opportunities where I can grow my skills and work on real-world problems.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>tailwind CSS</li>
+      <li>bootsrap</li>
+         <li>wordpress</li>
+      <li>Figma Design</li>        <li>Responsive Design</li> 
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>To-Do List App</h3>
+      <p>A simple app to manage daily tasks using HTML, CSS, and JavaScript.</p>
+      <a href="./todo.html" target="_blank">Live Demo</a> 
+   
+    </div>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Displays real-time weather using OpenWeatherMap API.</p>
+      <a href="./weather.html" target="_blank">Live Demo</a> 
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="https://farhansalikh@gmail.com">Farhan ullah</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/farhan-ullah-10206633b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/Farhan ullah</a></p>
+  </section>
+</body>
+</html>
